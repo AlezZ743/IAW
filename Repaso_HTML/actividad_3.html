@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alex Lopez">
+    <meta name="description" content="Actividad 3">
+    <meta name="keywords" content="Repaso HTML, HTML basico">
+</head>
+<!-- Añadimos un fondo a la página -->
+<body style="background-size:cover;" background="https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBkZWwlMjBzaXRpbyUyMHdlYnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80">
+    <header>
+        <!-- Alineamos y colocamos la barra de navegación en otro lugar -->
+        <nav style="text-align:right; position:relative; right:50px; top:50px;">
+            <ul style="display:inline; font-size: large;">
+                <li style="display:inline; margin-right: 20px;">
+                    <a href="https://elgoog.im/breakout/">Navegaci&oacute;n 1</a>
+                </li>
+                <li style="display:inline;">
+                    <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TdIKctNMWD0EsxJzc9LLErJV0jJTE4sKMrMBwCL2QoE&q=leonardo+dicaprio&oq=&aqs=chrome.4.0i3i66i143i362l2j46i3i143i362j0i3i66i143i362j46i3i143i362j0i3i66i143i362l2j46i3i143i362.166403j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on">Navegaci&oacute;n 2</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Cambiamos el texto del logo por una imagen -->
+        <h1>
+            <img style="width:100px; height:100px; position: relative; top:0px; left:50px" src="data:image/jpeg;base64,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"/>
+        </h1>
+        <!-- Creamos un grupo de títulos y le damos algunas propiedades de estilo -->
+        <hgroup style="position: relative; left:200px; border:2px solid black; padding: 2%; width:500px">
+            <h2 style="font-size:20px;">
+                Subt&iacute;tulo 1
+            </h2>
+            <h3 style="font-size:30px;">
+                Subt&iacute;tulo 2
+            </h3>
+            <p>
+                1101101
+            </p>
+            <button style="width:25%; background-color: teal; border-radius:20px">
+                Aprender m&aacute;s
+            </button>
+        </hgroup>
+    </header>
+    <br>
+    <hr>
+    <main>
+        <section>
+            <h2>Secci&oacute;n 1</h2>
+            <article>
+                <h3>
+                    Art&iacute;culo 1
+                </h3>
+                <p>
+                    <i>
+                        "C'est pas possible"
+                    </i>
+                </p>
+            </article>
+            <article>
+                <h3>
+                    Art&iacute;culo 2
+                </h3>
+                <p>
+                    <i>
+                        "C'est possible"
+                    </i>
+                </p>
+            </article>
+        </section>
+        <br>
+        <aside>
+            <h2>
+                Contenidos alternativos
+            </h2>
+        </aside>
+    </main>
+    <hr>
+    <footer>
+        <h2>
+            Pie de p&aacute;gina
+        </h2>
+    </footer>
+</body>
+</html>
