@@ -1,0 +1,13 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: teal;
+}
+
+ol{
+    list-style-type: lower-greek;
+}
+
+mark{
+    background-color:lime;
+}
