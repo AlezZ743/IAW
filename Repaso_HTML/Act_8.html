@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Actividad 8
+    </title>
+</head>
+<body>
+    <h1>
+        Actividad 8
+    </h1>
+    <h2>
+        Por favor, introduzca sus datos a continuación:
+    </h2>
+    <br>
+    <label for="rango">
+        Valor
+    </label>
+    <input type="range" min="0" max="10" step="1" value="1" name="rango" id="rango">
+    <input type="number" id="numero" name="numero" max="10" min="0">
+        <script>
+            const rango = document.getElementById("rango")
+            const numero = document.getElementById("numero")
+            rango.onchange = function(){
+                numero.value = rango.value;
+            }
+        </script>
+    <br><br>
+    <label for="fecha">
+        Fecha: 
+    </label>
+    <input id="fecha" name="fecha" type="date">
+    <br><br>
+    <label for="fechayhora">
+        Fecha y hora: 
+    </label>
+    <input id="fechayhora" name="fechayhora" type="datetime">
+    <br><br>
+    <label for="fechayhoralocal">
+        Fecha y hora local: 
+    </label>
+    <input id="fechayhoralocal" name="fechayhoralocal" type="datetime-local">
+    <br><br>
+    <label for="hora">
+        Hora: 
+    </label>
+    <input id="hora" name="hora" type="time">
+    <br><br>
+    <label for="mes">
+        Mes: 
+    </label>
+    <input id="mes" name="mes" type="month">
+    <br><br>
+    <label for="colorfd">
+        Elegir color de fondo
+    </label>
+    <input id="colorfd" name="colorfd" type="color">
+    <br><br>
+    <form action="gestiona.php" method="get">
+        <label for="dia">
+            Elige tu día de la semana: 
+        </label>
+        <input list="dias" name="dia" id="dia">
+        <datalist id="dias">
+            <option value="Lunes"></option>
+            <option value="Martes"></option>
+            <option value="Miércoles"></option>
+            <option value="Jueves"></option>
+            <option value="Viernes"></option>
+            <option value="Sábado"></option>
+            <option value="Domingo"></option>
+        </datalist>
+    </form>
+    <br><br>
+    <form action="gestiona_datos.php">
+        <label for="dni">
+            DNI
+        </label>
+        <input type="text" id="dni" name="dni" pattern="((\d{8}))([-]?)([A-Z]{1}))" title="Inválido">
+        <input type="submit">
+    </form>
+    <br><br>
+    <label for="cp">
+        Código postal: 
+    </label>
+    <input type="text" id="cp" name="cp" pattern="/^(?:0[1-9]|[1-4]\d|5[0-2])\d{3}$/" title="Debes incluir un código postal válido" placeholder="Escribe aquí los cinco números">
+    <br><br>
+    <label>
+        Nombre: 
+    </label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí" autofocus>
+    <br><br>
+    <label>
+        Apellidos: 
+    </label>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos aquí">
+    <br><br>
+    <form action="cambia.php" method="post" name="login">
+        <label for="usuario">Usuario: </label>
+        <input type="text" id="usuario" name="usuario" required>
+        <br><br>
+        <label for="clave">
+            Clave: 
+        </label>
+        <input type="password" id="clave" name="clave" required>
+        <input type="submit" value="AEAEAE">
+        </form>
+        <br><br>
+        <form action="gestiona_datos.php" method="get" autocomplete="off">
+            <label>
+                Nombre
+            </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí" autocomplete="off">
+        </form>
+</body>
